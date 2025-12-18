@@ -56,7 +56,7 @@ int main() {
         arr[i] = i + 1;
     }
 
-    // Create 4 threads, each handling 5 elements
+    // Create 4 threads, each one handling 5 elements
     for (int i = 0; i < THREADS; i++) {
         threadData[i].start = i * 5;
         threadData[i].end = threadData[i].start + 4;
